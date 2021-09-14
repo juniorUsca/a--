@@ -96,7 +96,7 @@ function HomePage () {
       <h5 className="ruta">🤖 Color de ruta optima</h5>
       <br />
       <h4>
-        {problema + 1 < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
+        {problema < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
       </h4>
       <div>
         <Map
