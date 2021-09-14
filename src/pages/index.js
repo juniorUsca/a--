@@ -135,16 +135,16 @@ function HomePage () {
           @apply text-2xl text-red-400 font-bold text-center;
           padding-bottom: 40px;
         }
+        h5 {
+          @apply text-lg;
+        }
         .inicio {
-          @apply text-2xl text-red-400 text-center;
           color: #FFEB3B;
         }
         .objetivo {
-          @apply text-2xl text-red-400 text-center;
           color: #FF5252;
         }
         .ruta {
-          @apply text-2xl text-red-400 text-center;
           color: #03A9F4;
           padding-bottom: 40px;
         }
