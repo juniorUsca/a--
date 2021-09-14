@@ -94,6 +94,11 @@ function HomePage () {
         {problema + 1 < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
       </h4>
       <br />
+      <h5>Leyenda</h5>
+      <h5 className="inicio">🚀 Color de inicio</h5>
+      <h5 className="objetivo">🏁 Color del objetivo actual</h5>
+      <h5 className="ruta">🤖 Color de ruta optima</h5>
+      <br />
       <div>
         <Map
           map={map}
@@ -128,6 +133,19 @@ function HomePage () {
         }
         h4 {
           @apply text-2xl text-red-400 font-bold text-center;
+          padding-bottom: 40px;
+        }
+        .inicio {
+          @apply text-2xl text-red-400 text-center;
+          color: #FFEB3B;
+        }
+        .objetivo {
+          @apply text-2xl text-red-400 text-center;
+          color: #FF5252;
+        }
+        .ruta {
+          @apply text-2xl text-red-400 text-center;
+          color: #03A9F4;
           padding-bottom: 40px;
         }
         div {
