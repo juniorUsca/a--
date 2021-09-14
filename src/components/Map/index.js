@@ -1,5 +1,6 @@
 import Box from '@components/Box'
 
+/* eslint-disable react/no-array-index-key */
 export default function Map ({
   width, height, boxSize = 100, map,
 }) {

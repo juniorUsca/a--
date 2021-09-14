@@ -1,6 +1,5 @@
 import Layout from '@components/Layout'
 import Map from '@components/Map'
-import Button from '@ui/Button'
 import useAWSAlmacen from 'hooks/useAWSAlmacen'
 // eslint-disable-next-line no-unused-vars
 // import { useSession, getSession, signIn } from 'next-auth/client'
@@ -100,7 +99,7 @@ function HomePage () {
           height={4}
         />
         <section>
-          {path && path.map(({ x, y, tag }, index) => (
+          {path && path.map(({ x, y, tag }) => (
             <span>
               {tag}
               (
