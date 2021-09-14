@@ -86,7 +86,9 @@ function HomePage () {
       <h2>UNIR - Razonamiento y Planficación Automática</h2>
       <br />
       <h3>Junior Usca Huacasi</h3>
-      <h3>Junior Usca Huacasi</h3>
+      <h3>Alberto Linares Lopez</h3>
+      <h3>Arturo Garcia Sánchez</h3>
+      <h3>Jorge Alejandro Canizares Cedeño</h3>
       <br />
       <h4>
         {problema + 1 < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
