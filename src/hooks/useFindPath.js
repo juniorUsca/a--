@@ -159,6 +159,9 @@ export default function useFindPath (initialMap, start, end, begin, speed = 1200
         setTimeout(() => {
           const path = getPath(closedList, end)
           console.log(path)
+          console.log(openList)
+          console.log(closedList)
+          console.log('------------')
           setPath(path)
           setMap(map => {
             const newMap = JSON.parse(JSON.stringify(initialMap))
