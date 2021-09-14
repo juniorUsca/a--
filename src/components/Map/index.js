@@ -2,7 +2,7 @@ import Box from '@components/Box'
 
 /* eslint-disable react/no-array-index-key */
 export default function Map ({
-  width, height, boxSize = 100, map,
+  width, height, boxSize = 100, map, problema,
 }) {
   return (
     <section>
@@ -16,6 +16,7 @@ export default function Map ({
                 y={y}
                 size={boxSize}
                 type={type}
+                problema={problema}
               />
             ),
           ),

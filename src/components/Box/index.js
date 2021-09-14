@@ -1,5 +1,5 @@
 export default function Box ({
-  x, y, size = 100, type = 0,
+  x, y, size = 100, type = 0, problema,
 }) {
   const color = [
     '#fff', // blank
@@ -13,20 +13,42 @@ export default function Box ({
   ]
   return (
     <div>
-      {x}
-      {' '}
-      ,
-      {' '}
-      {y}
+      <span>
+        {x}
+        {' '}
+        ,
+        {' '}
+        {y}
+      </span>
+      {type === 2 && (
+        <span>
+          {`M${problema + 1}`}
+        </span>
+      )}
+      {type === 3 && (
+        <span>
+          {`Ini${problema + 1}`}
+        </span>
+      )}
+      {type === 6 && (
+        <span className="robot">
+          R
+        </span>
+      )}
       <style jsx>
         {`
         div {
           height: ${size}px;
           widht: ${size}px;
           background: ${color[type]};
-          text-align: center;
-          line-height: ${size}px;
           border: 1px solid #dddddd66;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .robot {
+          color: #fff;
         }
         `}
       </style>

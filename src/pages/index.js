@@ -103,6 +103,7 @@ function HomePage () {
           map={map}
           width={4}
           height={4}
+          problema={problema}
         />
         <section>
           {path && path.map(({ x, y, tag }) => (
