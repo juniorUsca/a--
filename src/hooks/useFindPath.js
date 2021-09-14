@@ -161,10 +161,12 @@ export default function useFindPath (initialMap, start, end, begin, speed = 1200
           console.log(path)
           setPath(path)
           setMap(map => {
-            const newMap = JSON.parse(JSON.stringify(map))
+            const newMap = JSON.parse(JSON.stringify(initialMap))
             path.forEach(el => {
               if (newMap[el.x][el.y] !== 2) { newMap[el.x][el.y] = 7 }
             })
+            newMap[start.x][start.y] = 3
+            newMap[end.x][end.y] = 2
             return newMap
           })
           setTimeout(() => {

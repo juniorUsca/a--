@@ -90,15 +90,14 @@ function HomePage () {
       <h3>Arturo Garcia Sánchez</h3>
       <h3>Jorge Alejandro Canizares Cedeño</h3>
       <br />
-      <h4>
-        {problema + 1 < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
-      </h4>
-      <br />
       <h5>Leyenda</h5>
       <h5 className="inicio">🚀 Color de inicio</h5>
       <h5 className="objetivo">🏁 Color del objetivo actual</h5>
       <h5 className="ruta">🤖 Color de ruta optima</h5>
       <br />
+      <h4>
+        {problema + 1 < problemas.length ? `Problema ${problema + 1}` : 'Termino: Puede actualizar la página para reiniciar'}
+      </h4>
       <div>
         <Map
           map={map}
